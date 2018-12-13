@@ -8,7 +8,7 @@ import { TASKS } from "./mock-tasks";
   providedIn: "root"
 })
 export class TaskService {
-  getTasks(): Observable<Hero[]> {
+  getTasks(): Observable<Task[]> {
     return of(TASKS);
   }
 
