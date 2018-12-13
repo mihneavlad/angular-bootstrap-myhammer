@@ -1,8 +1,21 @@
 <h2>Tasks</h2>
 
-<ul class="heroes">
-  <li *ngFor="let task of tasks" (click)="onSelect(task)" [class.selected]="task === selectedTask">
-    <span class="badge">{{task.id}}</span>{{task.title}}</li>
-</ul>
+
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+
+      <ul class="heroes">
+        <li *ngFor="let task of tasks" (click)="onSelect(task)" [class.selected]="task === selectedTask">
+          <span class="badge">{{task.id}}</span>{{task.title}}</li>
+      </ul>
+
+    </div>
+    <div class="col-9 text-center">
+      2 of 2 (wider)
+    </div>
+  </div>
+</div>
+
 
 <app-task-detail [task]="selectedTask"></app-task-detail>
