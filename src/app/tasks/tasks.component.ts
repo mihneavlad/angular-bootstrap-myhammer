@@ -1,4 +1,4 @@
-// import { TASKS } from "../mock-tasks";
+import { TASKS } from "../mock-tasks";
 import { Component, OnInit } from "@angular/core";
 import { Task } from "../task";
 

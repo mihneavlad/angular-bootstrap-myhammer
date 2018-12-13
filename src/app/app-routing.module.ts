@@ -8,8 +8,8 @@ import { TaskDetailComponent } from "./task-detail/task-detail.component";
 const routes: Routes = [
   { path: "", redirectTo: "/main", pathMatch: "full" },
   { path: "main", component: MainComponent },
-  { path: "tasks", component: TasksComponent },
-  { path: "task/:id", component: TaskDetailComponent }
+  { path: "task/:id", component: TaskDetailComponent },
+  { path: "tasks", component: TasksComponent }
 ];
 
 @NgModule({

@@ -1,6 +1,6 @@
+import { Component, OnInit, Input } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Location } from "@angular/common";
-import { Component, OnInit, Input } from "@angular/core";
 
 import { Task } from "../task";
 import { TaskService } from "../task.service";
@@ -15,7 +15,7 @@ export class TaskDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private heroService: TaskService,
+    private taskService: TaskService,
     private location: Location
   ) {}
 
@@ -28,7 +28,7 @@ export class TaskDetailComponent implements OnInit {
     this.taskService.getTask(id).subscribe(task => (this.task = task));
   }
 
-  goBack(): void {
-    this.location.back();
-  }
+  // goBack(): void {
+  //   this.location.back();
+  // }
 }

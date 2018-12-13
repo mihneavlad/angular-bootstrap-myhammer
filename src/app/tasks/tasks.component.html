@@ -1,21 +1,24 @@
 <h2>Tasks</h2>
 
 
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="col-3">
 
-      <ul class="heroes">
-        <li *ngFor="let task of tasks">
-          <a routerLink="/task/{{task.id}}">
-            <span class="badge">{{task.id}}</span>{{task.title}}
-          </a>
-        </li>
-      </ul>
+
 
     </div>
     <div class="col-9 text-center">
       2 of 2 (wider)
     </div>
   </div>
-</div>
+</div> -->
+<ul class="heroes">
+  <li *ngFor="let task of tasks">
+    <a routerLink="/task/{{task.id}}">
+      <span class="badge">{{task.id}}</span>{{task.title}}
+    </a>
+  </li>
+</ul>
+
+<!-- <app-task-detail [task]="selectedTask"></app-task-detail> -->
