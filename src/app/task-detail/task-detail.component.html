@@ -1,18 +1,9 @@
-<h2>Tasks</h2>
+<h2>Task</h2>
 
-<div class="container">
-  <div class="row">
-    <div class="col-3">
-
-    </div>
-    <div class="col-9 text-center">
-      <div *ngIf="task">
-        <h2>{{ task.title | uppercase }} DETAILS</h2>
-        <div><span>id: </span>{{ task.id }}</div>
-        <div><span>title: </span>{{ task.title }}</div>
-      </div>
-    </div>
-  </div>
+<div *ngIf="task">
+  <h2>{{ task.title | uppercase }} DETAILS</h2>
+  <div><span>id: </span>{{ task.id }}</div>
+  <div><span>title: </span>{{ task.title }}</div>
 </div>
 
 <!-- <app-task-detail [task]="selectedTask"></app-task-detail> -->
