@@ -1,8 +1,9 @@
-<h3>Top Tasks</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let task of tasks" class="col-1-4">
-    <div class="module hero">
-      <h4>{{task.name}}</h4>
-    </div>
-  </a>
+<div class="text-center">
+  <h1><a routerLink="/tasks">Tasks</a></h1>
 </div>
+
+<a *ngFor="let task of tasks" class="col-1-4" routerLink="/task/{{task.id}}">
+  <div class="module hero">
+    <h4>{{task.title}}</h4>
+  </div>
+</a>
