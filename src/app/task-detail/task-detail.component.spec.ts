@@ -1,16 +1,19 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { ActivatedRoute } from "@angular/router";
+import { Location } from "@angular/common";
 
-import { TaskDetailComponent } from './task-detail.component';
+import { TaskDetailComponent } from "./task-detail.component";
 
-describe('TaskDetailComponent', () => {
+import { HeroService } from "../hero.service";
+
+describe("TaskDetailComponent", () => {
   let component: TaskDetailComponent;
   let fixture: ComponentFixture<TaskDetailComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TaskDetailComponent ]
-    })
-    .compileComponents();
+      declarations: [TaskDetailComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +22,7 @@ describe('TaskDetailComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
