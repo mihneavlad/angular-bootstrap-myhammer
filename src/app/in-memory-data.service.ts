@@ -25,16 +25,17 @@ export class InMemoryDataService implements InMemoryDbService {
 
     const access = async () => {
       const response = await fetch("../assets/data/jobs.json");
-      const tasks = await response.json();
+      const data = await response.json();
+      const tasks = data.body;
 
+      console.log(data);
       console.log(tasks);
-      console.log(tasks.body);
-      console.log(typeof tasks.body[0].id);
-      console.log(tasks.body.map(item => item.state === "active"));
+      console.log(typeof tasks[0].id);
+      console.log(tasks.map(item => item.state === "active"));
     };
 
     access();
-
+    //
     // const tasks = access();
     // return { tasks };
   }
