@@ -3,8 +3,8 @@
   "error": "",
   "body": [
     {
-      "id": "98969442",
-      "title": "90 m² Dach neu eindecken, Material benötigt",
+      "id": 0,
+      "title": "90 mï¿½ Dach neu eindecken, Material benï¿½tigt",
       "zip_code": "10115",
       "city": "Berlin",
       "thumbnail": "//placekitten.com/150/150",
@@ -32,8 +32,8 @@
       "created_at": "2018-10-01T14:14:32+02:00"
     },
     {
-      "id": "68934444",
-      "title": "2 Scheiben in Altbau-Balkontür austauschen",
+      "id": 1,
+      "title": "2 Scheiben in Altbau-Balkontï¿½r austauschen",
       "zip_code": "10115",
       "city": "Berlin",
       "thumbnail": "//placekitten.com/150/150",
@@ -54,8 +54,8 @@
       "created_at": "2018-10-11T04:14:32+02:00"
     },
     {
-      "id": "38934412",
-      "title": "15 Holz- Altbau Türen weiß-matt lackieren.",
+      "id": 2,
+      "title": "15 Holz- Altbau Tï¿½ren weiï¿½-matt lackieren.",
       "zip_code": "10115",
       "city": "Berlin",
       "thumbnail": "//placekitten.com/150/150",
@@ -76,8 +76,8 @@
       "created_at": "2018-08-11T14:14:32+02:00"
     },
     {
-      "id": "8969556",
-      "title": "Wöchentliche Renigung eines Hauses",
+      "id": 3,
+      "title": "Wï¿½chentliche Renigung eines Hauses",
       "zip_code": "10115",
       "city": "Berlin",
       "thumbnail": "//placekitten.com/150/150",

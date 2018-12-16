@@ -6,6 +6,7 @@ import { Task } from "./task";
 // import { TASKS } from "./mock-tasks";
 
 import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { catchError, map, tap } from "rxjs/operators";
 
 @Injectable({
   providedIn: "root"
@@ -20,7 +21,7 @@ export class TaskService {
   }
 
   getTask(id: number): Observable<Task> {
-    const url = `${this.tasksUrl}/${id}`;
+    const url = `task/${id}`;
     return this.http.get<Task>(url);
   }
 
