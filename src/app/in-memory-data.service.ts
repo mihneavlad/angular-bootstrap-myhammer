@@ -30,12 +30,11 @@ export class InMemoryDataService implements InMemoryDbService {
 
       console.log(data);
       console.log(tasks);
-      console.log(typeof tasks[0].id);
-      console.log(tasks.map(item => item.state === "active"));
+      // console.log(typeof tasks[0].id);
+      // console.log(tasks.map(item => item.state === "active"));
     };
 
     access();
-    //
     // const tasks = access();
     // return { tasks };
   }

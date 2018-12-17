@@ -17,7 +17,8 @@ export class MainComponent implements OnInit {
   }
 
   getTasks(): void {
-    this.taskService.getTasks();
-    // .subscribe(tasks => (this.tasks = tasks.slice(1, 4)));
+    this.taskService
+      .getTasks()
+      .subscribe(tasks => (this.tasks = tasks.slice(1, 4)));
   }
 }
