@@ -1,5 +1,14 @@
-<h1>{{title}}</h1>
+<!-- <h1>{{title}}</h1> -->
 
 <!-- <a routerLink="/main">test</a> -->
-<app-tasks></app-tasks>
-<router-outlet></router-outlet>
+
+<div class="container">
+  <div class="row">
+    <div class="col-5">
+      <app-tasks></app-tasks>
+    </div>
+    <div class="col-7">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
