@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 
-import jobs from "../assets/data/jobs.json";
+// import tasks from "../assets/data/tasks.json";
 
 @Component({
   selector: "app-root",
