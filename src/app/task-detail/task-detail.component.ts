@@ -1,9 +1,12 @@
 import { Component, OnInit, Input } from "@angular/core";
-import { ActivatedRoute } from "@angular/router";
+import { Router, ActivatedRoute, ParamMap } from "@angular/router";
 import { Location } from "@angular/common";
+
+import { switchMap } from "rxjs/operators";
 
 import { Task } from "../task";
 import { TaskService } from "../task.service";
+import { Observable } from "rxjs";
 
 @Component({
   selector: "app-task-detail",
@@ -15,16 +18,17 @@ export class TaskDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private taskService: TaskService,
-    private location: Location
+    private router: Router,
+    private taskService: TaskService
   ) {}
 
   ngOnInit(): void {
-    this.getTask();
-  }
-
-  getTask(): void {
-    const id = +this.route.snapshot.paramMap.get("id");
-    this.taskService.getTask(id).subscribe(task => (this.task = task));
+    this.route.paramMap
+      .pipe(
+        switchMap((params: ParamMap) =>
+          this.taskService.getTask(+params.get("id"))
+        )
+      )
+      .subscribe(task => (this.task = task));
   }
 }

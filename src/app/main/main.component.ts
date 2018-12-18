@@ -8,17 +8,7 @@ import { TaskService } from "../task.service";
   styleUrls: ["./main.component.css"]
 })
 export class MainComponent implements OnInit {
-  tasks: Task[] = [];
-
   constructor(private taskService: TaskService) {}
 
-  ngOnInit() {
-    this.getTasks();
-  }
-
-  getTasks(): void {
-    this.taskService
-      .getTasks()
-      .subscribe(tasks => (this.tasks = tasks.slice(1, 4)));
-  }
+  ngOnInit() {}
 }
