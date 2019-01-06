@@ -1,7 +1,11 @@
-<h2>Task</h2>
+<h2>Job Details</h2>
 
 <div *ngIf="task">
-  <h2>{{ task.title | uppercase }} DETAILS</h2>
-  <div><span>id: </span>{{ task.id }}</div>
-  <div><span>title: </span>{{ task.title }}</div>
+  <h1>{{ task.title | uppercase }} </h1>
+  <h4><span>City: </span>{{ task.city }}</h4>
+  <h4><span>ZIP Code: </span>{{ task.zip_code }}</h4>
+  <!-- <div class="center">
+    <img src="https://loremflickr.com/320/240/renovate/" />
+  </div> -->
+  <div><span><strong>What needs to be done: </strong></span>{{ task.description }}</div>
 </div>

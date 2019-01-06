@@ -1,5 +1,6 @@
 * {
-  font-family: "Anonymous Pro", monospace;
+  font-family: "Rubik", sans-serif;
+  max-width: 98vw;
 }
 
 .row {
@@ -9,7 +10,6 @@
 
 .left {
   padding: 5vh;
-  background-color: green;
 }
 
 .right {
