@@ -8,7 +8,12 @@ import tasks from "../assets/data/tasks.json";
 })
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
-    console.log(tasks);
-    return { tasks: tasks.body };
+    console.log(tasks.body);
+
+    let activeTasks = tasks.body.filter(task => task.state === "active");
+
+    console.log(activeTasks);
+
+    return { tasks: activeTasks };
   }
 }
