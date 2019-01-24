@@ -1,6 +1,6 @@
 # Two panel layout
 
-![Screenshot](myPortfolio_2_React.png)
+![Screenshot](ang-1.jpg)
 
 > A quick walkthrough of my myPortfolio_2_React app built using React, React Router, and Redux
 
