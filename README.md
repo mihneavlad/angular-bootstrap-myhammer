@@ -2,34 +2,25 @@
 
 ![Screenshot](ang-1.jpg)
 
-> A quick walkthrough of my myPortfolio_2_React app built using React, React Router, and Redux
+> A quick walkthrough of my first Angular app built using the Angular CLI, version 7.1.2
 
 ## See it live
 
-[Two Panel Layout built in Angular](https://mihneavlad.github.io/angular-bootstrap-myhammer/)
+[Two Panel Layout built in Angular] (https://mihneavlad.github.io/angular-bootstrap-myhammer/)
 
-## Quick Start
+## App Info
 
 ```bash
 # Install dependencies for server
 npm install
 
-
 # Run the client
-ng serve --open
 
-
-# client run on http://localhost:3000
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 ```
-
-## App Info
-
 ### Author
 
 Mihnea Vlad
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
