@@ -2,7 +2,7 @@
 
 ![Screenshot](ang-1.jpg)
 
-> A quick walkthrough of my first Angular app built using the Angular CLI, version 7.1.2
+A quick presentation of my first Angular app built using the Angular CLI, version 7.1.2.
 
 ## See it live
 
