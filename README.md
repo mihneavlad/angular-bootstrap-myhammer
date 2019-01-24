@@ -6,7 +6,7 @@
 
 ## See it live
 
-[Two Panel Layout built in Angular] (https://mihneavlad.github.io/angular-bootstrap-myhammer/)
+[Two Panel Layout built in Angular](https://mihneavlad.github.io/angular-bootstrap-myhammer/)
 
 ## App Info
 
