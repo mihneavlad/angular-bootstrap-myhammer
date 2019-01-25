@@ -2,7 +2,7 @@
 
 ![Screenshot](ang-1.jpg)
 
-A quick presentation of my first Angular app built using the Angular CLI, version 7.1.2.
+My first Angular app built using the Angular CLI, version 7.1.2. A two-panel jobs overview interface rendering a list of unfinished jobs (left) and a detailed job description (right panel). The jobs are loaded with an HTTP-Request from a JSON file.
 
 ## See it live
 
