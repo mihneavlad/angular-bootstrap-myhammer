@@ -1,4 +1,4 @@
-# Two panel layout
+# A two-panel layout built in Angular
 
 ![Screenshot](ang-1.jpg)
 
